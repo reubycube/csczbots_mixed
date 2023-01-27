@@ -1,0 +1,505 @@
+//----------------------------------------------------------------------------
+// BotProfile.db
+// Author: Michael S. Booth, Turtle Rock Studios (www.turtlerockstudios.com)
+//
+// This database defines bot "personalities". 
+// Feel free to edit it and define your own bots.
+//
+
+
+//----------------------------------------------------------------------------
+
+//
+// All profiles begin with this data and overwrite their own
+//
+Default
+	Skill = 50
+	Aggression = 50
+	ReactionTime = 0.3
+	AttackDelay = 0
+	Teamwork = 75
+	WeaponPreference = none
+	Cost = 0
+	Difficulty = NORMAL
+	VoicePitch = 100
+	Skin = 0
+End
+
+//----------------------------------------------------------------------------
+
+//
+// These templates inherit from Default and override with their values
+// The name of the template defines a type that is used by individual bot profiles
+//
+
+// weapon preference templates
+
+Template Trueawpsniper
+	WeaponPreference = awp
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = deagle
+End
+
+Template TournyT
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = deagle
+End
+
+Template Tourny
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = deagle
+End
+
+Template Custom
+	WeaponPreference = awp
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = mp5navy
+	WeaponPreference = deagle
+End
+
+Template CustomT
+	WeaponPreference = awp
+	WeaponPreference = sg552
+	WeaponPreference = aug
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = mp5navy
+	WeaponPreference = deagle
+End
+
+Template AutoSniper
+	WeaponPreference = sg550
+	WeaponPreference = g3sg1
+	WeaponPreference = scout
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5navy
+	WeaponPreference = p228
+End
+
+Template AutoSniperT
+	WeaponPreference = g3sg1
+	WeaponPreference = sg550
+	WeaponPreference = scout
+	WeaponPreference = galil
+	WeaponPreference = famas
+	WeaponPreference = mp5navy
+	WeaponPreference = p228
+End
+
+Template Rifle
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5navy
+End
+
+Template RifleT
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = galil
+	WeaponPreference = famas
+	WeaponPreference = mp5navy
+End
+
+Template Punch
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = mp5navy
+	WeaponPreference = deagle
+End
+
+Template PunchT
+	WeaponPreference = sg552
+	WeaponPreference = aug
+	WeaponPreference = mp5navy
+	WeaponPreference = deagle
+End
+
+Template Sniper
+	WeaponPreference = awp
+	WeaponPreference = scout
+	WeaponPreference = mp5navy
+	WeaponPreference = deagle
+End
+
+Template ScoutSniper
+	WeaponPreference = scout
+	WeaponPreference = tmp
+	WeaponPreference = mac10
+	WeaponPreference = fiveseven
+End
+
+Template Power
+	WeaponPreference = m249
+	WeaponPreference = xm1014
+	WeaponPreference = m3
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = deagle
+End
+
+Template Shotgun
+	WeaponPreference = xm1014
+	WeaponPreference = m3
+	WeaponPreference = elite
+	WeaponPreference = fiveseven
+End
+
+Template PumpShotgun
+	WeaponPreference = m3
+	WeaponPreference = elite
+	WeaponPreference = fiveseven
+End
+
+Template Shield
+//	WeaponPreference = shield
+	WeaponPreference = m4a1			// in case shield is disallowed
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5navy
+End
+
+Template Spray
+	WeaponPreference = p90
+	WeaponPreference = tmp
+	WeaponPreference = mac10
+	WeaponPreference = elite
+	WeaponPreference = fiveseven
+End
+
+Template LowPowerSpray
+	WeaponPreference = ump45
+	WeaponPreference = tmp
+	WeaponPreference = mac10
+	WeaponPreference = elite
+	WeaponPreference = fiveseven
+End
+
+Template MedPowerSpray
+	WeaponPreference = mp5navy
+	WeaponPreference = tmp
+	WeaponPreference = mac10
+	WeaponPreference = elite
+	WeaponPreference = fiveseven
+End
+
+
+
+// skill templates
+Template Awppro
+	Skill = 100
+	Aggression = 75
+	ReactionTime = 0.1
+	Cost = 4
+	Difficulty = EXPERT+HARD+NORMAL+EASY
+	VoicePitch = 90
+End
+
+Template EliteScared
+	Skill = 100
+	Aggression = 60
+	ReactionTime = 0.2
+	Cost = 4
+	Difficulty = EXPERT+HARD+NORMAL+EASY
+	VoicePitch = 90
+End
+
+Template ExpertScared
+	Skill = 95
+	Aggression = 50
+	ReactionTime = 0.2
+	Cost = 4
+	Difficulty = EXPERT+HARD+NORMAL
+	VoicePitch = 88
+End
+
+Template Elite
+	Skill = 100
+	Aggression = 100
+	ReactionTime = 0.2
+	Teamwork = 100
+	Cost = 4
+	Difficulty = EXPERT+NORMAL
+	VoicePitch = 85
+End
+
+Template Expert
+	Skill = 90
+	Aggression = 90
+	ReactionTime = 0.2
+	Teamwork = 95
+	Cost = 4
+	Difficulty = EXPERT+HARD+NORMAL
+	VoicePitch = 88
+End
+
+Template VeryHard
+	Skill = 80
+	Aggression = 80
+	ReactionTime = 0.25
+	Teamwork = 90
+	Cost = 3
+	Difficulty = HARD+NORMAL
+	VoicePitch = 92
+End
+
+Template Hard
+	Skill = 75
+	Aggression = 75
+	ReactionTime = 0.25
+	Teamwork = 85
+	Cost = 3
+	Difficulty = HARD+NORMAL
+	VoicePitch = 94
+End
+
+Template Tough
+	Skill = 60
+	Aggression = 60
+	ReactionTime = 0.3
+	Teamwork = 80
+	AttackDelay = 0.35
+	Cost = 2
+	Difficulty = NORMAL
+	VoicePitch = 96
+End
+
+Template Normal
+	Skill = 50
+	Aggression = 50
+	ReactionTime = 0.4
+	AttackDelay = 0.7
+	Cost = 2
+	Difficulty = NORMAL
+End
+
+Template Fair
+	Skill = 25
+	Aggression = 30
+	ReactionTime = 0.4
+	AttackDelay = 1.0
+	Cost = 1
+	Difficulty = EASY+NORMAL
+	VoicePitch = 105
+End
+
+Template Easy
+	Skill = 0
+	Aggression = 20
+	ReactionTime = 0.5
+	AttackDelay = 1.5
+	Cost = 1
+	Difficulty = EASY+NORMAL
+	VoicePitch = 110
+End
+
+Template Newbie
+	Skill = 0
+	Aggression = 0
+	Teamwork = 10
+	ReactionTime = 1.0
+	AttackDelay = 2.5
+	Cost = 1
+	Difficulty = EASY+NORMAL
+	VoicePitch = 110
+End
+
+//----------------------------------------------------------------------------
+//
+// These are the individual bot profiles, which inherit first from 
+// Default and then the specified Template(s), in order
+//
+
+MedPowerSpray+Fair FemaleBot1
+	Skin = 1
+	Teamwork = 100
+	VoicePitch = 150
+	VoiceBank = FBotChatter.db
+End
+
+AutoSniperT+Hard Bot1
+	Skin = 2
+	Teamwork = 50
+	VoicePitch = 89
+End
+
+PunchT+Tough Bot2
+	Skin = 4
+	VoicePitch = 89
+End
+
+Sniper+Normal Bot3
+	VoicePitch = 95
+End
+
+Custom+Fair Bot4
+	VoicePitch = 92
+End
+
+PunchT+Normal Bot5
+	VoicePitch = 95
+End
+
+PunchT+Fair Bot6
+	VoicePitch = 88
+End
+
+CustomT+Fair Bot7
+	VoicePitch = 98
+End
+
+Sniper+Normal FemaleBot2
+	Teamwork = 90
+	VoicePitch = 130
+	VoiceBank = FBotChatter.db
+End
+
+RifleT+Normal Bot8
+	VoicePitch = 88
+End
+
+Rifle+Easy FemaleBot3
+	Teamwork = 90
+	VoicePitch = 130
+	VoiceBank = FBotChatter.db
+End
+
+AutoSniper+Fair Bot9
+	Teamwork = 10
+	VoicePitch = 95
+End
+
+Trueawpsniper+Normal Bot10
+	Skin = 3
+	VoicePitch = 88
+End
+
+Rifle+Tough FemaleBot4
+	Skin = 4
+	Teamwork = 95
+	VoicePitch = 150
+	VoiceBank = FBotChatter.db
+End
+
+Shotgun+Tough FemaleBot5
+	Skin = 1
+	Aggression = 100
+	VoicePitch = 115
+	VoiceBank = FBotChatter.db
+End
+
+Custom+Tough FemaleBot6
+	Aggression = 100
+	VoicePitch = 120
+	VoiceBank = FBotChatter.db
+End
+
+PunchT+Fair FemaleBot7
+	Aggression = 50
+	VoicePitch = 105
+	VoiceBank = FBotChatter.db
+End
+
+Power+Fair FemaleBot8
+	Aggression = 50
+	VoicePitch = 100
+	VoiceBank = FBotChatter.db
+End
+
+Power+Easy Bot11
+	Teamwork = 25
+	Aggression = 100
+	VoicePitch = 105
+End
+
+Spray+Easy Bot12
+	Aggression = 100
+	VoicePitch = 94
+End
+
+ScoutSniper+ExpertScared FemaleBot9
+	Skin = 3
+	Aggression = 40
+	VoicePitch = 145
+	VoiceBank = FBotChatter.db
+End
+
+AutoSniperT+Fair Bot13
+	VoicePitch = 98
+End
+
+AutoSniperT+Easy Bot14
+	VoicePitch = 110
+End
+
+Trueawpsniper+Awppro Bot15
+	Skin = 2
+	VoicePitch = 85
+End
+
+CustomT+Expert Bot16
+	VoicePitch = 90
+End
+
+CustomT+Elite Bot17
+	VoicePitch = 85
+End
+
+Rifle+Easy FemaleBot10
+	VoicePitch = 147
+	VoiceBank = FBotChatter.db
+End
+
+AutoSniper+Fair FemaleBot11
+	VoicePitch = 143
+	VoiceBank = FBotChatter.db
+End
+
+Trueawpsniper+Normal FemaleBot12
+	Skin = 3
+	VoicePitch = 145
+	VoiceBank = FBotChatter.db
+End
+
+Trueawpsniper+Normal FemaleBot13
+	Skin = 3
+	VoicePitch = 138
+	VoiceBank = FBotChatter.db
+End
+
+Rifle+Easy FemaleBot14
+	VoicePitch = 148
+	VoiceBank = FBotChatter.db
+End
+
+RifleT+Expert FemaleBot15
+	VoicePitch = 132
+	VoiceBank = FBotChatter.db
+End
+
+RifleT+VeryHard FemaleBot16
+	VoicePitch = 120
+	VoiceBank = FBotChatter.db
+End
+
+Newbie FemaleBot17
+	Teamwork = 55
+	VoicePitch = 132
+	VoiceBank = FBotChatter.db
+End
+
+Newbie FemaleBot18
+	Teamwork = 75
+	Aggression = 20
+	VoicePitch = 150
+	VoiceBank = FBotChatter.db
+End
